@@ -5,6 +5,13 @@ Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **P
 
 ---
 
+## 2026-06-15 (reframe periode Report Mei → Mei saja)
+
+- Semua label periode **"April–Mei 2026" → "Mei 2026"** di report Mei (cover, title tag, exec intro, KPI sub, Financial Impact, slide marketing/CRM, closing, footer) + card index Report 02.
+- Paralel dgn Report 01 yang sudah jadi "April saja". ⚠️ Catatan: label periode di slide marketing (Airbnb/Agoda/Meta/CRM) ikut jadi "Mei 2026" — jika data channel tsebenarnya mencakup 2 bulan, perlu dikonfirmasi terpisah.
+
+---
+
 ## 2026-06-15 (infografis Exec Summary Mei)
 
 - Ditambah **"Executive Snapshot"** band di Exec Summary report Mei (di bawah 3 KPI card): (1) momentum revenue April→Mei +21,7%, (2) stacked bar komposisi revenue (hunian 95,6% · telco 3,2% · lelang 1,3%).
