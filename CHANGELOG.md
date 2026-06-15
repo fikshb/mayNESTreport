@@ -12,7 +12,8 @@ Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **P
 - **Total Revenue April = Rp 191.741.881** (operasional Rp 176.191.881 + lelang Arkadia Rp 15.550.000).
   - Stream: hunian & short-stay Rp 168.781.881 + infrastruktur telco Rp 7.410.000 + lelang Rp 15.550.000.
 - Exec Summary: card "Revenue Lelang" dilebur jadi satu card **"Total Revenue April" Rp 191.741.881**.
-- Label periode keliru "Maret–Mei 2026" dikoreksi ke "Februari–April 2026" (cover/judul tetap Feb–April, paralel dgn Report 02 yg periode April–Mei tapi revenue Mei-saja).
+- Report direframe penuh jadi **"April 2026"** (cover, title tag, judul index, insight, closing, footer) — dari sebelumnya "Februari–April" / "Maret–Mei".
+- Tanggal lelang Arkadia 11 & 16 Maret **diasumsikan dana masuk April** (atas keputusan user) dan diubah ke April + diurutkan kronologis; total Rp 15.550.000 tidak berubah.
 
 ### Koreksi baseline unit aktif (lintas-report)
 - Unit aktif **April: 2→8 dikoreksi jadi 16→22** (delta tetap +6 unit; +300% → +37,5%).
