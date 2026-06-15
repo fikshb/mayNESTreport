@@ -5,6 +5,13 @@ Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **P
 
 ---
 
+## 2026-06-15 (infografis Exec Summary Mei)
+
+- Ditambah **"Executive Snapshot"** band di Exec Summary report Mei (di bawah 3 KPI card): (1) momentum revenue April→Mei +21,7%, (2) stacked bar komposisi revenue (hunian 95,6% · telco 3,2% · lelang 1,3%).
+- Pure HTML/CSS inline, palette NEST (deep-blue/gold), offline-safe, tanpa dependency chart. Slide aman karena `.slide` sudah `overflow-y:auto`.
+
+---
+
 ## 2026-06-15 (revisi Report April + koreksi unit aktif lintas-report)
 
 ### Report 01 (April) — revenue single-month & restructure
