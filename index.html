@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEST Living &mdash; Board of Directors Reports</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --primary: #1a1a2e;
+  --secondary: #16213e;
+  --accent: #0f3460;
+  --gold: #c9a84c;
+  --gold-light: #e8d48b;
+  --text: #2d2d2d;
+  --text-light: #6b6b6b;
+  --white: #ffffff;
+  --border: rgba(255,255,255,0.12);
+  --success: #27ae60;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { height:100%; }
+body {
+  font-family:'Inter',sans-serif;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+  color:#fff;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow-x:hidden;
+}
+body::before {
+  content:'';
+  position:fixed; inset:0;
+  background:
+    radial-gradient(circle at 18% 82%, rgba(201,168,76,0.18) 0%, transparent 50%),
+    radial-gradient(circle at 82% 18%, rgba(201,168,76,0.12) 0%, transparent 50%);
+  pointer-events:none;
+}
+
+.page {
+  position:relative; z-index:1;
+  max-width:1180px;
+  width:100%;
+  margin:0 auto;
+  padding:56px 28px 80px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+.brand {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:48px;
+}
+.brand img {
+  width:56px; height:56px;
+  border-radius:12px;
+  box-shadow:0 4px 16px rgba(0,0,0,0.3);
+  background:#fff;
+  padding:4px;
+}
+.brand-text .name {
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:4px;
+  color:var(--gold);
+}
+.brand-text .sub {
+  font-size:12px;
+  color:rgba(255,255,255,0.65);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-top:2px;
+}
+
+.hero {
+  margin-bottom:48px;
+}
+.hero .eyebrow {
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:4px;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.hero h1 {
+  font-size:44px;
+  font-weight:800;
+  line-height:1.15;
+  margin-bottom:14px;
+  max-width:780px;
+}
+.hero p {
+  font-size:16px;
+  color:rgba(255,255,255,0.75);
+  max-width:680px;
+  line-height:1.7;
+}
+
+.report-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(340px, 1fr));
+  gap:24px;
+  margin-bottom:48px;
+}
+
+.report-card {
+  background: rgba(255,255,255,0.04);
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:32px 30px 28px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+  transition: all 0.3s ease;
+  text-decoration:none;
+  color:inherit;
+  backdrop-filter: blur(8px);
+}
+.report-card::before {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:4px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+.report-card:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(201,168,76,0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+}
+.report-card:hover::before { transform: scaleX(1); }
+
+.card-tag {
+  display:inline-block;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:2px;
+  color:var(--gold);
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.card-title {
+  font-size:26px;
+  font-weight:800;
+  margin-bottom:6px;
+  color:#fff;
+}
+.card-period {
+  font-size:14px;
+  color:rgba(255,255,255,0.65);
+  margin-bottom:20px;
+  letter-spacing:0.5px;
+}
+.card-summary {
+  font-size:14px;
+  color:rgba(255,255,255,0.78);
+  line-height:1.65;
+  margin-bottom:22px;
+  flex:1;
+}
+.card-stats {
+  display:flex;
+  gap:18px;
+  padding:16px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  margin-bottom:22px;
+  flex-wrap:wrap;
+}
+.card-stat {
+  flex:1;
+  min-width:90px;
+}
+.card-stat .stat-label {
+  font-size:10px;
+  letter-spacing:1.5px;
+  color:rgba(255,255,255,0.55);
+  text-transform:uppercase;
+  margin-bottom:4px;
+}
+.card-stat .stat-value {
+  font-size:16px;
+  font-weight:700;
+  color:var(--gold-light);
+}
+.card-cta {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:13px;
+  font-weight:700;
+  color:var(--gold);
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+.card-cta .arrow {
+  font-size:18px;
+  transition: transform 0.3s ease;
+}
+.report-card:hover .card-cta .arrow { transform: translateX(6px); }
+
+.report-card.coming-soon {
+  opacity:0.5;
+  cursor:not-allowed;
+  pointer-events:none;
+}
+.report-card.coming-soon .card-cta { color: rgba(255,255,255,0.4); }
+
+.footer {
+  margin-top:auto;
+  padding-top:32px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px;
+  border-top:1px solid var(--border);
+}
+.footer .conf {
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:3px;
+  color:var(--gold);
+  padding:6px 14px;
+  border:1px solid var(--gold);
+  border-radius:4px;
+}
+.footer .meta {
+  font-size:12px;
+  color:rgba(255,255,255,0.5);
+  letter-spacing:1px;
+}
+
+@media(max-width:600px){
+  .page { padding:36px 20px 48px; }
+  .hero h1 { font-size:30px; }
+  .brand { margin-bottom:32px; }
+  .hero { margin-bottom:36px; }
+  .card-title { font-size:22px; }
+}
+</style>
+</head>
+<body>
+
+<div id="authGate" style="position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;">
+  <div style="background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.12);border-radius:16px;padding:40px 36px;max-width:380px;width:90%;backdrop-filter:blur(10px);box-shadow:0 20px 50px rgba(0,0,0,0.4);">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-size:11px;font-weight:700;letter-spacing:3px;color:#c9a84c;text-transform:uppercase;margin-bottom:8px;">Restricted Access</div>
+      <div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:3px;">NEST LIVING</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.6);margin-top:6px;letter-spacing:1px;">Board of Directors Portal</div>
+    </div>
+    <form id="authForm" autocomplete="off">
+      <input type="password" id="authInput" placeholder="Enter access password" autocomplete="off" autofocus style="width:100%;padding:14px 16px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.18);border-radius:8px;color:#fff;font-size:14px;font-family:inherit;letter-spacing:3px;text-align:center;outline:none;box-sizing:border-box;">
+      <div id="authError" style="font-size:12px;color:#f59e0b;text-align:center;margin-top:10px;min-height:18px;letter-spacing:0.5px;"></div>
+      <button type="submit" style="width:100%;margin-top:14px;padding:14px;background:#c9a84c;color:#1a1a2e;border:none;border-radius:8px;font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit;">Continue &rarr;</button>
+    </form>
+  </div>
+</div>
+<script>
+(function(){
+  if (sessionStorage.getItem('nestAuth') === '1') {
+    var g = document.getElementById('authGate'); if (g) g.remove();
+    return;
+  }
+  document.body.style.overflow = 'hidden';
+  document.getElementById('authForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var v = (document.getElementById('authInput').value || '').trim().toUpperCase();
+    if (v === 'NESTLIVING') {
+      sessionStorage.setItem('nestAuth', '1');
+      document.getElementById('authGate').remove();
+      document.body.style.overflow = '';
+    } else {
+      document.getElementById('authError').textContent = 'Wrong password. Please try again.';
+      document.getElementById('authInput').value = '';
+      document.getElementById('authInput').focus();
+    }
+  });
+})();
+</script>
+
+<div class="page">
+
+  <div class="brand">
+    <img src="NEST%20LOGO.webp" alt="NEST Living">
+    <div class="brand-text">
+      <div class="name">NEST LIVING</div>
+      <div class="sub">Board of Directors Portal</div>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Monthly Operational Reports</div>
+    <h1>Pilih periode laporan yang ingin Anda buka.</h1>
+    <p>Setiap laporan merangkum progress operasional, aktivasi aset, dan dampak finansial NEST Living pada periode terkait. Klik salah satu kartu di bawah untuk membuka deck slide lengkapnya.</p>
+  </div>
+
+  <div class="report-grid">
+
+    <a class="report-card" href="NEST_Living_Slide_Report_April_2026.html">
+      <span class="card-tag">Report 01</span>
+      <div class="card-title">Februari &ndash; April 2026</div>
+      <div class="card-period">Operational Progress &amp; Work Log Report</div>
+      <p class="card-summary">Periode transformasi dari pengelolaan aset pasif menjadi optimasi aktif: aktivasi 6 unit baru, lelang inventaris Arkadia, pengurangan unit gudang, ekspansi marketing channel, plus revenue rental tenant Rp 357,7 juta (Feb&ndash;Apr).</p>
+      <div class="card-stats">
+        <div class="card-stat">
+          <div class="stat-label">Slides</div>
+          <div class="stat-value">20</div>
+        </div>
+        <div class="card-stat">
+          <div class="stat-label">Unit Aktif</div>
+          <div class="stat-value">2 &rarr; 8</div>
+        </div>
+        <div class="card-stat">
+          <div class="stat-label">Rental Tenant</div>
+          <div class="stat-value">Rp 357,7 jt</div>
+        </div>
+      </div>
+      <div class="card-cta">
+        <span>Open Report</span>
+        <span class="arrow">&rarr;</span>
+      </div>
+    </a>
+
+    <a class="report-card" href="NEST_Living_Slide_Report_Mei_2026.html">
+      <span class="card-tag">Report 02 &mdash; Latest</span>
+      <div class="card-title">April &ndash; Mei 2026</div>
+      <div class="card-period">Monthly Operational &amp; Asset Development Report</div>
+      <p class="card-summary">Pergeseran dari fase stabilisasi ke fase optimalisasi aset: revenue Mei Rp 107 juta (short-stay) + Rp 48,9 juta rental tenant, unit aktif naik 8 ke 10, plus performa Agoda &amp; Meta Ads terlampir.</p>
+      <div class="card-stats">
+        <div class="card-stat">
+          <div class="stat-label">Slides</div>
+          <div class="stat-value">20</div>
+        </div>
+        <div class="card-stat">
+          <div class="stat-label">Unit Aktif</div>
+          <div class="stat-value">8 &rarr; 10</div>
+        </div>
+        <div class="card-stat">
+          <div class="stat-label">Revenue Mei (gab.)</div>
+          <div class="stat-value">Rp 156 jt</div>
+        </div>
+      </div>
+      <div class="card-cta">
+        <span>Open Report</span>
+        <span class="arrow">&rarr;</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    <span class="conf">CONFIDENTIAL</span>
+    <span class="meta">For Board of Directors Use Only &mdash; NEST Living 2026</span>
+  </div>
+
+</div>
+
+</body>
+</html>

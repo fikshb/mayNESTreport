@@ -1,0 +1,7 @@
+# Confidential raw data — DO NOT publish
+150626/
+*.xls
+_backup_pre_rental/
+
+# OS / misc
+.DS_Store
