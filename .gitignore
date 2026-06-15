@@ -5,3 +5,4 @@ _backup_pre_rental/
 
 # OS / misc
 .DS_Store
+.vercel

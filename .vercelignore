@@ -1,0 +1,7 @@
+# Confidential raw data — NEVER upload to Vercel (tenant names + nominal)
+150626/
+*.xls
+*.xlsx
+_backup_pre_rental/
+.DS_Store
+.git
