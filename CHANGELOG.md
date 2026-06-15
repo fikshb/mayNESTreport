@@ -1,7 +1,45 @@
 # Changelog — NEST Living Board Reports
 
 Catatan revisi deck laporan operasional NEST Living (April & Mei 2026).
-Format tanggal: YYYY-MM-DD. Angka revenue: basis **akrual (earned revenue)**, lingkup **PT Nest Kelola Hunian**, **incl. PPN (gross)** kecuali dinyatakan lain.
+Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **PT Nest Kelola Hunian**, **incl. PPN (gross)** kecuali dinyatakan lain.
+
+---
+
+## 2026-06-15 (revisi lanjutan — single Total Revenue)
+
+### Penyederhanaan basis & penyajian revenue
+- Istilah **akrual / earned revenue / unearned (amortisasi)** **dihapus seluruhnya** dari deck Mei — diganti bahasa lugas.
+- Pemasukan tidak lagi dipecah dua (earned vs total); deck kini menyajikan **satu angka Total Revenue** saja.
+- **Total Revenue Mei 2026: Rp 233.361.397** (incl. PPN).
+
+### Komposisi Total Revenue (perhitungan — TIDAK ditampilkan di slide, BOD-friendly)
+```
+  OTA / short-stay (dilaporkan terpisah, tidak diverifikasi ulang) ...  107.174.823
++ Income Monthly (Finance) .........................................  157.574.074
+− Double-count booking (tercatat ganda di OTA & income monthly) ....  (34.350.000)
++ Lelang aset idle (one-off) .......................................    2.962.500
+= TOTAL REVENUE ....................................................  233.361.397
+```
+- **Pendapatan Operasional (bersih) = Rp 230.398.897** (= 107.174.823 + 157.574.074 − 34.350.000); inilah angka yang tampil di slide, dipecah per stream: hunian & short-stay Rp 222.988.897 + infrastruktur telco Rp 7.410.000.
+
+### Detail double-count (Rp 34.350.000 — 10 invoice INV-SC, booking dobel di finance)
+| Invoice | Nama | Nominal |
+|---|---|---:|
+| INV-SC/0526/0005 | Andara Dhimas | 1.100.000 |
+| INV-SC/0526/0007 | Maulidan Isbar | 6.300.000 |
+| INV-SC/0526/0008 | Anis Mulachela | 6.500.000 |
+| INV-SC/0526/0009 | Sidah Husein | 750.000 |
+| INV-SC/0526/0012 | Maulidan Isbar | 6.300.000 |
+| INV-SC/0526/0015 | Maulidan Isbar | 6.300.000 |
+| INV-SC/0526/0019 | David Figueroa Cicaedo | 1.550.000 |
+| INV-SC/0526/0020 | Andara Dhimas | 2.200.000 |
+| INV-SC/0526/0021 | Andara Dhimas | 2.200.000 |
+| INV-SC/0526/0022 | Billy Rayn Pelupessy | 1.150.000 |
+| **Total** | | **34.350.000** |
+
+- **PT Cemani Toka** (2 debit note, ~Rp 7 jt/baris) **diabaikan** atas instruksi — tidak dijadikan pengurang maupun penambah; dianggap tidak ada.
+- Detail double-count & rekonsiliasi **sengaja tidak dimuat di slide** agar tidak memancing pertanyaan di forum BOD; dicatat di log ini saja sebagai audit trail.
+- Sumber data: `Income monthly.xls` + rekap OTA (tidak di-commit — confidential).
 
 ---
 
