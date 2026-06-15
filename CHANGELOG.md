@@ -5,6 +5,22 @@ Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **P
 
 ---
 
+## 2026-06-15 (revisi Report April + koreksi unit aktif lintas-report)
+
+### Report 01 (April) — revenue single-month & restructure
+- Slide revenue diubah dari basis akrual 3-bulan (Feb–Apr, total Rp 384.178.888) menjadi **single-month April**, format "Revenue Detail" seperti report Mei (istilah akrual/unearned dibuang).
+- **Total Revenue April = Rp 191.741.881** (operasional Rp 176.191.881 + lelang Arkadia Rp 15.550.000).
+  - Stream: hunian & short-stay Rp 168.781.881 + infrastruktur telco Rp 7.410.000 + lelang Rp 15.550.000.
+- Exec Summary: card "Revenue Lelang" dilebur jadi satu card **"Total Revenue April" Rp 191.741.881**.
+- Label periode keliru "Maret–Mei 2026" dikoreksi ke "Februari–April 2026" (cover/judul tetap Feb–April, paralel dgn Report 02 yg periode April–Mei tapi revenue Mei-saja).
+
+### Koreksi baseline unit aktif (lintas-report)
+- Unit aktif **April: 2→8 dikoreksi jadi 16→22** (delta tetap +6 unit; +300% → +37,5%).
+- Unit aktif **Mei: 8→10 dikoreksi jadi 22→24** (+25% → +9,1%) agar nyambung dgn April yang ditutup di 22.
+- `index.html`: kedua card (Report 01 & 02) disesuaikan.
+
+---
+
 ## 2026-06-15 (revisi lanjutan — single Total Revenue)
 
 ### Penyederhanaan basis & penyajian revenue
