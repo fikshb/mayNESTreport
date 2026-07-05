@@ -1,6 +1,8 @@
 # Confidential raw data — DO NOT publish
 150626/
 *.xls
+*.xlsx
+*.docx
 _backup_pre_rental/
 
 # OS / misc

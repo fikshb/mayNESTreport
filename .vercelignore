@@ -2,6 +2,7 @@
 150626/
 *.xls
 *.xlsx
+*.docx
 _backup_pre_rental/
 .DS_Store
 .git

@@ -5,6 +5,17 @@ Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **P
 
 ---
 
+## 2026-07-05 (Report 03 — Q2 2026 kuartalan)
+
+- Deck baru **`NEST_Living_Slide_Report_Q2_2026.html`** (12 slide) — rollup April–Juni 2026, mengikuti struktur 8-section dokumen sumber `Nest_Living_Q2_2026_Board_Report_Complete.docx`.
+- Slide: Cover · Executive Summary · Executive Dashboard (+bar chart revenue) · Revenue Capacity & Growth (+gauge 81%) · Business Transformation Journey (timeline April/Mei/Juni) · Key Achievements · Operational Work Log · Digital Distribution · Financial Impact · Operational Risk Assessment · Strategic Investment Recommendation · Closing.
+- **Angka Q2 (dibulatkan, incl. PPN):** Revenue April Rp191jt · Mei Rp233jt · Juni **Rp318jt** (+66,5% dlm 2 bln) · Total Q2 **Rp742jt**. Unit aktif **22→26→28** (+27%). Revenue capacity 49%→59%→**81%** dari potensi maks Rp392jt/bln (sisa peluang Rp74jt). 3 konversi short→long stay.
+- **Keputusan data (atas instruksi user):** (1) revenue Juni ditampilkan **total saja** tanpa breakdown stream; (2) **Daya Mitra Rp127,78jt incl. PPN** (bukan Rp115jt yang tertulis di docx) agar konsisten dgn deck April/Mei; (3) Digital Distribution **tanpa embed/link** — hanya note bahwa detail channel ada di Laporan Mei 2026.
+- ⚠️ Angka Q2 pakai versi **dibulatkan** dari docx (mis. Mei Rp233jt) — beda dgn deck Mei yang presisi Rp233.361.397. Konsisten internal di deck Q2 saja.
+- `index.html`: tambah card **Report 03 — Q2 2026** (label "Latest" pindah dari Mei ke Q2); **koreksi unit aktif Mei 24→26** (card Report 02) agar nyambung dgn dashboard docx.
+
+---
+
 ## 2026-06-15 (reframe periode Report Mei → Mei saja)
 
 - Semua label periode **"April–Mei 2026" → "Mei 2026"** di report Mei (cover, title tag, exec intro, KPI sub, Financial Impact, slide marketing/CRM, closing, footer) + card index Report 02.
