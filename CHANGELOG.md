@@ -13,6 +13,8 @@ Format tanggal: YYYY-MM-DD. Angka revenue: **single Total Revenue**, lingkup **P
 - **Keputusan data (atas instruksi user):** (1) revenue Juni ditampilkan **total saja** tanpa breakdown stream; (2) **Daya Mitra Rp127,78jt incl. PPN** (bukan Rp115jt yang tertulis di docx) agar konsisten dgn deck April/Mei; (3) Digital Distribution **tanpa embed/link** — hanya note bahwa detail channel ada di Laporan Mei 2026.
 - ⚠️ Angka Q2 pakai versi **dibulatkan** dari docx (mis. Mei Rp233jt) — beda dgn deck Mei yang presisi Rp233.361.397. Konsisten internal di deck Q2 saja.
 - `index.html`: tambah card **Report 03 — Q2 2026** (label "Latest" pindah dari Mei ke Q2); **koreksi unit aktif Mei 24→26** (card Report 02) agar nyambung dgn dashboard docx.
+- **Deploy:** di-commit & push ke `origin/main` (commit `bfb019e`) → auto-deploy Vercel ke https://may-nes-treport.vercel.app/. File `.docx`/`.xlsx` sumber ditambahkan ke `.gitignore` & `.vercelignore` (tidak ikut publish).
+- **Open item:** angka unit di dalam deck **Mei** masih "22→24 (+9,1%)" — belum disinkronkan ke 26; menunggu keputusan user.
 
 ---
 
